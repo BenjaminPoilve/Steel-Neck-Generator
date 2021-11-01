@@ -8,7 +8,7 @@ For a personal project, I had to make a tool to create such templates easily, so
 
 ## User guide
 
-![](/sources/images/scad_interface.png)
+![](/media/scad_interface.png)
 
 * Download and install [OpenSCAD](https://openscad.org/)
 * Download and open the file `neck_generator.scad`
