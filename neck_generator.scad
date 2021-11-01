@@ -6,11 +6,11 @@ $fn = 400;
 //====================================================================
 
 //FRET CARACTERISTICS
-//scale lenght from neck to bridge
+//scale length from neck to bridge
 virtual_scale_length=620;
 //num of frets to draw
 num_fret=23;
-//Optionnal: to add padding
+//Optional: to add padding
 padding = 0;
 //Size of the drawn line
 line_width=2;
@@ -60,7 +60,7 @@ module trapeze(length,start_height,end_height){
         translate([length,0,0]) square(size=[0.01, end_height],center = true);
         square(size=[0.01, start_height],center = true);
     }
-    
+
 }//end module
 
 module rounded_trapeze(length,start_height,end_height,corner_radius){
@@ -68,21 +68,21 @@ module rounded_trapeze(length,start_height,end_height,corner_radius){
             minkowski() {
                 trapeze(length- 2 * corner_radius,start_height- 2 * corner_radius,end_height- 2 * corner_radius);
                 circle( corner_radius );
-            }   
-    
+            }
+
 }//end module
 
 //===========================================================
 // STAR TO MAKE MARKERS
 module star(points, outer, inner) {
-	
+
 	// polar to cartesian: radius/angle to x/y
 	function x(r, a) = r * cos(a);
 	function y(r, a) = r * sin(a);
-	
+
 	// angular width of each pie slice of the star
 	increment = 360/points;
-	
+
 	union() {
 		for (p = [0 : points-1]) {
             {x_outer = x(outer, increment * p);
@@ -115,11 +115,11 @@ union(){
         offset(r = line_width) {
             rounded_trapeze(slider_length,neck_max_width*taper_value,neck_max_width,corner_size);
         }
-       for(i=[1:num_fret]) translate([padding+fret_positions[i]-line_width/2.0,-neck_max_width/2.0,0]){ 
+       for(i=[1:num_fret]) translate([padding+fret_positions[i]-line_width/2.0,-neck_max_width/2.0,0]){
            square(size=[line_width , neck_max_width], center=false);
        }
    }
-    
+
 }
 for(i=[1:num_fret+1]) translate([padding+fret_positions[(i-1)]+(fret_positions[i]-fret_positions[(i-1)])/2.0,0,0]){
             star_width=rel_size*(fret_positions[i]-fret_positions[(i-1)])/2.0;

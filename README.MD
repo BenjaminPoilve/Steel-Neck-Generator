@@ -12,7 +12,7 @@ For a personal project, I had to make a tool to create such templates easily, so
 
 * Download and install [OpenSCAD](https://openscad.org/)
 * Download and open the file `neck_generator.scad`
-* Adjust the parameters in the `MECHANICAL SIZES` section to fit the caracteristics of your project
+* Adjust the parameters in the `MECHANICAL SIZES` section to fit the characteristics of your project
 * Render the drawing using the `Render` button in the `Design` menu
 * Export the drawing using the `Export` menu in the `File` menu (SVG and DXF might be supported by most vendors, see the media folder for examples)
 
@@ -21,10 +21,10 @@ For a personal project, I had to make a tool to create such templates easily, so
 Please note that all dimensions are in metric.
 
 * FRET CARACTERISTICS
-  * Scale lenght from neck to bridge
+  * Scale length from neck to bridge
   * Number of frets to draw
   * Width of the line
-  * Optionnal: padding distance at the beginning of the neck
+  * Optional: padding distance at the beginning of the neck
 * NECK CARACTERISTICS
   * Neck Max width
   * Neck taper value (from max width)
@@ -40,9 +40,9 @@ Please note that all dimensions are in metric.
 
 ## License and usage
 
-This project is under the MIT license, so do whatever you want with it ! Attribution is always nice though, let me know if you find it usefull.
+This project is under the MIT license, so do whatever you want with it ! Attribution is always nice though, let me know if you find it useful.
 
-Feel free to ask for features in the issue panel of github, but know that I have limited time to dedicate to this.
+Feel free to ask for features in the issue panel of GitHub, but know that I have limited time to dedicate to this.
 
 ## Why I did this
 
