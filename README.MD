@@ -11,7 +11,7 @@ For a personal project, I had to make a tool to create such templates easily, so
 ![](/media/scad_interface.png)
 
 * Download and install [OpenSCAD](https://openscad.org/)
-* Download and open the file `neck_generator.scad`
+* Download and open the file [neck_generator.scad](https://raw.githubusercontent.com/BenjaminPoilve/Steel-Neck-Generator/master/neck_generator.scad)
 * Adjust the parameters in the `MECHANICAL SIZES` section to fit the characteristics of your project
 * Render the drawing using the `Render` button in the `Design` menu
 * Export the drawing using the `Export` menu in the `File` menu (SVG and DXF might be supported by most vendors, see the media folder for examples)
